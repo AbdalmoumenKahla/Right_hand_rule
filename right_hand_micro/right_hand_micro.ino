@@ -230,6 +230,9 @@ void updatePositionAfterMove(int move) {
       if (rawYawAngle > 180) rawYawAngle -= 360;
       break;
   }
+
+  // Fine-tune the robot's position and orientation after the move
+  fineTuneAfterMove(move);
 }
 
 // ========== MAZE FUNCTIONS ==========
